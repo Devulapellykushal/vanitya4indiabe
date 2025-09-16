@@ -1,0 +1,15 @@
+# ninja log v5
+31	734	0	F:/Vanitya/Vanitya/android/app/.cxx/Debug/1e1c25o2/x86_64/CMakeFiles/cmake.verify_globs	80f3965285dd629f
+105	15925	7788073567029287	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/f6d4683bd8ef71624111c29738be61a8/source/codegen/jni/react/renderer/components/safeareacontext/States.cpp.o	ec9e18bdc722bab
+72	15970	7788073573344901	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/25afd63e1438e1352bf4a94eb6ab30f1/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp.o	ab764efe8867b7c4
+92	16026	7788073581453024	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/6fcd6636f781205879e4f09554ac8733/react/renderer/components/safeareacontext/safeareacontextJSI-generated.cpp.o	90a38685d85907ce
+17	16032	7788073591003033	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/b5f95ff1fbdfec8126f711226324d356/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewState.cpp.o	44ae34630405e98c
+82	16039	7788073595253135	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/f6d4683bd8ef71624111c29738be61a8/source/codegen/jni/react/renderer/components/safeareacontext/ShadowNodes.cpp.o	29c3c43e51693900
+27	16044	7788073596843035	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/f6d4683bd8ef71624111c29738be61a8/source/codegen/jni/react/renderer/components/safeareacontext/Props.cpp.o	dd0d9e21f138216e
+2	16047	7788073604183028	CMakeFiles/appmodules.dir/OnLoad.cpp.o	876907ab66f15f51
+59	16051	7788073608794857	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/a92df2c935785a368ff0ca2e18f710f1/jni/react/renderer/components/safeareacontext/ComponentDescriptors.cpp.o	b922ee66599980dc
+9	16325	7788073617604809	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/6c8a74d30b06330427d710b5b6c198d3/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o	5a464de8521bcb19
+194	16329	7788073627964824	CMakeFiles/appmodules.dir/F_/Vanitya/Vanitya/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	879138fdf9bf1164
+15942	21612	7788073680758628	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/b5f95ff1fbdfec8126f711226324d356/android/build/generated/source/codegen/jni/safeareacontext-generated.cpp.o	8d34a50534a7ec0c
+21613	22551	7788073693592775	F:/Vanitya/Vanitya/android/app/build/intermediates/cxx/Debug/1e1c25o2/obj/x86_64/libreact_codegen_safeareacontext.so	8110f8bcd362b266
+22551	23099	7788073699442719	F:/Vanitya/Vanitya/android/app/build/intermediates/cxx/Debug/1e1c25o2/obj/x86_64/libappmodules.so	73cf009a26c1e945

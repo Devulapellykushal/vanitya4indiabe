@@ -1,0 +1,184 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 24 min SDK version: arm64-v8a",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\Debug\\1e1c25o2\\arm64-v8a\\android_gradle_build.json due to:",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"C:\\\\Program Files\\\\Java\\\\jdk-17\\\\bin\\\\java\" ^\n  --class-path ^\n  \"C:\\\\Users\\\\Koushik Pingilli\\\\.gradle\\\\caches\\\\modules-2\\\\files-2.1\\\\com.google.prefab\\\\cli\\\\2.1.0\\\\aa32fec809c44fa531f01dcfb739b5b3304d3050\\\\cli-2.1.0-all.jar\" ^\n  com.google.prefab.cli.AppKt ^\n  --build-system ^\n  cmake ^\n  --platform ^\n  android ^\n  --abi ^\n  arm64-v8a ^\n  --os-version ^\n  24 ^\n  --stl ^\n  c++_shared ^\n  --ndk-version ^\n  27 ^\n  --output ^\n  \"C:\\\\Users\\\\KOUSHI~1\\\\AppData\\\\Local\\\\Temp\\\\agp-prefab-staging9732599816504846351\\\\staged-cli-output\" ^\n  \"C:\\\\Users\\\\Koushik Pingilli\\\\.gradle\\\\caches\\\\8.14.3\\\\transforms\\\\eb6d09c91acf843499bdca80e0a66fd6\\\\transformed\\\\react-android-0.81.0-debug\\\\prefab\" ^\n  \"C:\\\\Users\\\\Koushik Pingilli\\\\.gradle\\\\caches\\\\8.14.3\\\\transforms\\\\5d0a1bdcc2c5d492e0409f1745c7c8f4\\\\transformed\\\\hermes-android-0.81.0-debug\\\\prefab\" ^\n  \"C:\\\\Users\\\\Koushik Pingilli\\\\.gradle\\\\caches\\\\8.14.3\\\\transforms\\\\a18451f415b73841e30da63b3d9805af\\\\transformed\\\\fbjni-0.7.0\\\\prefab\"\n",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 0",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\Debug\\1e1c25o2\\arm64-v8a\u0027",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\Debug\\1e1c25o2\\arm64-v8a\u0027",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake @echo off\n\"C:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HF:\\\\Vanitya\\\\Vanitya\\\\node_modules\\\\react-native\\\\ReactAndroid\\\\cmake-utils\\\\default-app-setup\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\1e1c25o2\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\1e1c25o2\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\.cxx\\\\Debug\\\\1e1c25o2\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\.cxx\\\\Debug\\\\1e1c25o2\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DPROJECT_BUILD_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\" ^\n  \"-DPROJECT_ROOT_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\" ^\n  \"-DREACT_ANDROID_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\node_modules\\\\react-native\\\\ReactAndroid\" ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES\u003dON\"\n",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"C:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HF:\\\\Vanitya\\\\Vanitya\\\\node_modules\\\\react-native\\\\ReactAndroid\\\\cmake-utils\\\\default-app-setup\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\27.1.12297006\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\Koushik Pingilli\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\1e1c25o2\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\1e1c25o2\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-DCMAKE_FIND_ROOT_PATH\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\.cxx\\\\Debug\\\\1e1c25o2\\\\prefab\\\\arm64-v8a\\\\prefab\" ^\n  \"-BF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\.cxx\\\\Debug\\\\1e1c25o2\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DPROJECT_BUILD_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\\\\app\\\\build\" ^\n  \"-DPROJECT_ROOT_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\android\" ^\n  \"-DREACT_ANDROID_DIR\u003dF:\\\\Vanitya\\\\Vanitya\\\\node_modules\\\\react-native\\\\ReactAndroid\" ^\n  \"-DANDROID_STL\u003dc++_shared\" ^\n  \"-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES\u003dON\"\n",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 0",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\Debug\\1e1c25o2\\arm64-v8a\\compile_commands.json.bin normally",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "hard linked F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\Debug\\1e1c25o2\\arm64-v8a\\compile_commands.json to F:\\Vanitya\\Vanitya\\android\\app\\.cxx\\tools\\debug\\arm64-v8a\\compile_commands.json",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "F:\\Vanitya\\Vanitya\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  }
+]

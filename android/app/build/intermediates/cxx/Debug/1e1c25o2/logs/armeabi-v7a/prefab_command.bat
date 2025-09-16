@@ -1,0 +1,22 @@
+@echo off
+"C:\\Program Files\\Java\\jdk-17\\bin\\java" ^
+  --class-path ^
+  "C:\\Users\\Koushik Pingilli\\.gradle\\caches\\modules-2\\files-2.1\\com.google.prefab\\cli\\2.1.0\\aa32fec809c44fa531f01dcfb739b5b3304d3050\\cli-2.1.0-all.jar" ^
+  com.google.prefab.cli.AppKt ^
+  --build-system ^
+  cmake ^
+  --platform ^
+  android ^
+  --abi ^
+  armeabi-v7a ^
+  --os-version ^
+  24 ^
+  --stl ^
+  c++_shared ^
+  --ndk-version ^
+  27 ^
+  --output ^
+  "C:\\Users\\KOUSHI~1\\AppData\\Local\\Temp\\agp-prefab-staging1037225370028059964\\staged-cli-output" ^
+  "C:\\Users\\Koushik Pingilli\\.gradle\\caches\\8.14.3\\transforms\\eb6d09c91acf843499bdca80e0a66fd6\\transformed\\react-android-0.81.0-debug\\prefab" ^
+  "C:\\Users\\Koushik Pingilli\\.gradle\\caches\\8.14.3\\transforms\\5d0a1bdcc2c5d492e0409f1745c7c8f4\\transformed\\hermes-android-0.81.0-debug\\prefab" ^
+  "C:\\Users\\Koushik Pingilli\\.gradle\\caches\\8.14.3\\transforms\\a18451f415b73841e30da63b3d9805af\\transformed\\fbjni-0.7.0\\prefab"

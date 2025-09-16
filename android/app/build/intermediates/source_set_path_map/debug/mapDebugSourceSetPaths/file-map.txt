@@ -1,0 +1,32 @@
+com.vanitya.app-autofill-1.1.0-0 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\1ca3663a1fa1b38f8b90bac9094d5e60\transformed\autofill-1.1.0\res
+com.vanitya.app-drawee-3.6.0-1 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\26493aaaab252a5e482c1ec68ae1753b\transformed\drawee-3.6.0\res
+com.vanitya.app-profileinstaller-1.3.1-2 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\27041508df8bca1a00689564c46909ec\transformed\profileinstaller-1.3.1\res
+com.vanitya.app-lifecycle-viewmodel-2.6.2-3 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\27df90de18a571932c46b95d0e259dc7\transformed\lifecycle-viewmodel-2.6.2\res
+com.vanitya.app-annotation-experimental-1.4.0-4 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\2aeab61e6c79580a61ba42c63c36e8b9\transformed\annotation-experimental-1.4.0\res
+com.vanitya.app-lifecycle-runtime-2.6.2-5 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\2d77937564f5b8a89d53275d66e6c6ae\transformed\lifecycle-runtime-2.6.2\res
+com.vanitya.app-tracing-1.1.0-6 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\60ccac169870d0bb8d93ec02bd82151f\transformed\tracing-1.1.0\res
+com.vanitya.app-emoji2-1.3.0-7 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\87d1f4dfe58076090bb2d88539c633aa\transformed\emoji2-1.3.0\res
+com.vanitya.app-lifecycle-livedata-2.6.2-8 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\91c01c8efba535e0ad95ed10639a132e\transformed\lifecycle-livedata-2.6.2\res
+com.vanitya.app-startup-runtime-1.1.1-9 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\9a1fb8b6ab37a7fab4911fe988a07ef0\transformed\startup-runtime-1.1.1\res
+com.vanitya.app-appcompat-1.7.0-10 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\9a3d7109ece86782fa80f9daad928ce1\transformed\appcompat-1.7.0\res
+com.vanitya.app-lifecycle-viewmodel-savedstate-2.6.2-11 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\ac2f20c823a194c54e5aa4cffebfe995\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.vanitya.app-activity-1.7.0-12 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\b14fceacc679837ad10a9c3882fe074a\transformed\activity-1.7.0\res
+com.vanitya.app-fragment-1.5.4-13 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\b2ca67d787aef4b1f7f6ac4349cb330e\transformed\fragment-1.5.4\res
+com.vanitya.app-core-runtime-2.2.0-14 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\b9d230fcdfa30dbfce61bf3b9605d6b5\transformed\core-runtime-2.2.0\res
+com.vanitya.app-core-ktx-1.13.1-15 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\bdef8dd643bd18b55d676b6b836b8035\transformed\core-ktx-1.13.1\res
+com.vanitya.app-core-1.13.1-16 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\c0bb43adce9f553621f0b37557791d2d\transformed\core-1.13.1\res
+com.vanitya.app-emoji2-views-helper-1.3.0-17 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\ca7e54b0aeaee2f1c24a77c0a680c20f\transformed\emoji2-views-helper-1.3.0\res
+com.vanitya.app-lifecycle-livedata-core-2.6.2-18 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\cc740a720b0f76a534131973a89dee17\transformed\lifecycle-livedata-core-2.6.2\res
+com.vanitya.app-lifecycle-process-2.6.2-19 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\d2340342a38e2ad07ed5f1cac7e16edb\transformed\lifecycle-process-2.6.2\res
+com.vanitya.app-savedstate-1.2.1-20 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\d6076e1149a51435d3ade43e5e15b90e\transformed\savedstate-1.2.1\res
+com.vanitya.app-appcompat-resources-1.7.0-21 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\e25de8567adeb8e4d45f491e957ae728\transformed\appcompat-resources-1.7.0\res
+com.vanitya.app-react-android-0.81.0-debug-22 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\eb6d09c91acf843499bdca80e0a66fd6\transformed\react-android-0.81.0-debug\res
+com.vanitya.app-swiperefreshlayout-1.1.0-23 C:\Users\Koushik Pingilli\.gradle\caches\8.14.3\transforms\f2c15e360ba8954837caf13e2707c423\transformed\swiperefreshlayout-1.1.0\res
+com.vanitya.app-pngs-24 F:\Vanitya\Vanitya\android\app\build\generated\res\pngs\debug
+com.vanitya.app-resValues-25 F:\Vanitya\Vanitya\android\app\build\generated\res\resValues\debug
+com.vanitya.app-packageDebugResources-26 F:\Vanitya\Vanitya\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.vanitya.app-packageDebugResources-27 F:\Vanitya\Vanitya\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.vanitya.app-debug-28 F:\Vanitya\Vanitya\android\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.vanitya.app-debug-29 F:\Vanitya\Vanitya\android\app\src\debug\res
+com.vanitya.app-main-30 F:\Vanitya\Vanitya\android\app\src\main\res
+com.vanitya.app-debug-31 F:\Vanitya\Vanitya\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug\packageDebugResources

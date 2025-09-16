@@ -1,0 +1,15 @@
+ninja: Entering directory `F:\Vanitya\Vanitya\android\app\.cxx\Debug\1e1c25o2\arm64-v8a'
+[0/2] Re-checking globbed directories...
+[1/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/f6d4683bd8ef71624111c29738be61a8/source/codegen/jni/react/renderer/components/safeareacontext/States.cpp.o
+[2/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/25afd63e1438e1352bf4a94eb6ab30f1/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp.o
+[3/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/6fcd6636f781205879e4f09554ac8733/react/renderer/components/safeareacontext/safeareacontextJSI-generated.cpp.o
+[4/13] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+[5/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/6c8a74d30b06330427d710b5b6c198d3/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewState.cpp.o
+[6/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/f6d4683bd8ef71624111c29738be61a8/source/codegen/jni/react/renderer/components/safeareacontext/Props.cpp.o
+[7/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/25afd63e1438e1352bf4a94eb6ab30f1/codegen/jni/react/renderer/components/safeareacontext/ShadowNodes.cpp.o
+[8/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/a92df2c935785a368ff0ca2e18f710f1/jni/react/renderer/components/safeareacontext/ComponentDescriptors.cpp.o
+[9/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/56c4ee670dd3a66fca252642e2e31ed5/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o
+[10/13] Building CXX object CMakeFiles/appmodules.dir/F_/Vanitya/Vanitya/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+[11/13] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/b5f95ff1fbdfec8126f711226324d356/android/build/generated/source/codegen/jni/safeareacontext-generated.cpp.o
+[12/13] Linking CXX shared library F:\Vanitya\Vanitya\android\app\build\intermediates\cxx\Debug\1e1c25o2\obj\arm64-v8a\libreact_codegen_safeareacontext.so
+[13/13] Linking CXX shared library F:\Vanitya\Vanitya\android\app\build\intermediates\cxx\Debug\1e1c25o2\obj\arm64-v8a\libappmodules.so
