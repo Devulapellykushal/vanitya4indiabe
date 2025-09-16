@@ -1,0 +1,9 @@
+SARVAM_API_URL: "https://api.sarvam.ai/v1"
+SARVAM_API_KEY: "__REPLACE__"
+SARVAM_FREE_CREDITS: 900
+AI4BHARAT_API_URL: "https://api.ai4bharat.org"
+AKSHARAMUKHA_URL: "https://aksharamukha.example"
+DEFAULT_SOURCE_LANG: "hi"
+DEFAULT_TARGET_LANG: "te"
+QUESTIONS_JSON_PATH: "data/sample_questions.json"
+STORAGE_BACKEND: "local" # or "s3"
