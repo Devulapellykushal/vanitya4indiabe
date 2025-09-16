@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Development override for Vanitya Backend
+  vanitya-backend:
+    build:
+      target: development
+    environment:
+      NODE_ENV: development
+      LOG_LEVEL: debug
+    volumes:
+      - ../..:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # Debug port
+    command: ["dumb-init", "npm", "run", "dev"]
+
+  # Development database with exposed port
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: dev_password
+    ports:
+      - "5432:5432"
+
+  # Development Redis without password
+  redis:
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+
+  # Optional: Database management tool
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: vanitya-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@vanitya.dev
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    networks:
+      - vanitya-network
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  pgadmin_data:
