@@ -1,3 +1,44 @@
+# Provider configurations
+providers:
+  sarvam:
+    base_url: "https://api.sarvam.ai/v1"
+    api_key: "__REPLACE__"
+    endpoints:
+      llm: "/generate"  # Sarvam-M endpoint
+      tts: "/tts"
+      stt: "/stt"
+      credits: "/usage/credits"  # If available
+    timeouts:
+      request_ms: 15000
+      connect_ms: 5000
+    credit_costs:
+      generate_questions: 1
+      tts: 1
+      stt: 1
+    voices:
+      default: "meera"
+      overrides:
+        hi: "bulbul_female_hi"
+        te: "bulbul_female_te"
+    stt_payload_style: "multipart"  # or "base64"
+    chat_mode: true  # Use chat-style messages for LLM
+    
+  ai4bharat:
+    base_url: "https://api.ai4bharat.org"
+    api_key: "__REPLACE__"
+    endpoints:
+      llm: "/v1/translate"
+      tts: "/v1/tts"
+      stt: "/v1/stt"
+      
+  local_seed:
+    enabled: true
+
+# Credits configuration
+credits_threshold: 10
+fallback_order: ["ai4bharat", "local_seed"]
+
+# Legacy configs (kept for backward compatibility)
 SARVAM_API_URL: "https://api.sarvam.ai/v1"
 SARVAM_API_KEY: "__REPLACE__"
 SARVAM_FREE_CREDITS: 900
@@ -8,7 +49,7 @@ DEFAULT_TARGET_LANG: "te"
 QUESTIONS_JSON_PATH: "data/sample_questions.json"
 STORAGE_BACKEND: "local" # or "s3"
 
-# AI configuration
+# AI configuration (legacy)
 ai:
   fallback_order: [sarvam, ai4bharat, local]
   sarvam:

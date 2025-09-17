@@ -1,0 +1,51 @@
+# ConfigMap for Vanitya application configuration
+# DEV/TEST USE ONLY - Not for production
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vanitya-config
+  namespace: vanitya
+data:
+  NODE_ENV: "development"
+  PORT: "5000"
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "vanitya"
+  DB_USER: "postgres"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  ML_SERVICE_URL: "http://ml-service:8000"
+  SARVAM_CREDITS_THRESHOLD: "50"
+  QUESTIONS_PER_UNIT: "10"
+  HEARTS_PER_USER: "5"
+  STORAGE_BACKEND: "local"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vanitya-yaml-config
+  namespace: vanitya
+data:
+  vanitya-config.yml: |
+    SARVAM_API_URL: "https://api.sarvam.ai/v1"
+    SARVAM_API_KEY: "__REPLACE__"
+    SARVAM_FREE_CREDITS: 900
+    AI4BHARAT_API_URL: "https://api.ai4bharat.org"
+    AKSHARAMUKHA_URL: "https://aksharamukha.example"
+    DEFAULT_SOURCE_LANG: "hi"
+    DEFAULT_TARGET_LANG: "te"
+    QUESTIONS_JSON_PATH: "data/sample_questions.json"
+    STORAGE_BACKEND: "local"
+    
+    ai:
+      fallback_order: [sarvam, ai4bharat, local]
+      sarvam:
+        credits_threshold: 50
+    
+    storage:
+      backend: local
+    
+    generation_policy:
+      max_exercises_per_lang_level: 1
+      questions_per_exercise: 10
+      audio_probability: 0.2

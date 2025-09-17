@@ -62,6 +62,11 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: false,
       field: 'audio_played'
     },
+    isVoice: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      field: 'is_voice'
+    },
     timestamp: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW

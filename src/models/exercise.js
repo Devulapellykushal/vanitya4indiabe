@@ -57,6 +57,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       field: 'correct_answer'
     },
+    audioEnabled: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull: false,
+      field: 'audio_enabled'
+    },
     hint: {
       type: DataTypes.TEXT,
       allowNull: true

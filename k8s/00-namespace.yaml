@@ -1,0 +1,9 @@
+# Namespace for Vanitya application
+# DEV/TEST USE ONLY - Not for production
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vanitya
+  labels:
+    name: vanitya
+    environment: development

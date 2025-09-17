@@ -1,0 +1,139 @@
+# Backend and ML Service Deployments
+# DEV/TEST USE ONLY - Not for production
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: vanitya
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: vanitya-backend:latest
+        imagePullPolicy: Never  # For local development
+        ports:
+        - containerPort: 5000
+        envFrom:
+        - configMapRef:
+            name: vanitya-config
+        - secretRef:
+            name: vanitya-secret
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://postgres:$(DB_PASS)@postgres-service:5432/vanitya"
+        - name: REDIS_URL
+          value: "redis://redis-service:6379"
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/config
+        - name: uploads
+          mountPath: /app/uploads
+      volumes:
+      - name: config-volume
+        configMap:
+          name: vanitya-yaml-config
+      - name: uploads
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: vanitya
+spec:
+  type: NodePort
+  selector:
+    app: backend
+  ports:
+  - port: 5000
+    targetPort: 5000
+    nodePort: 30500
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-service
+  namespace: vanitya
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml-service
+  template:
+    metadata:
+      labels:
+        app: ml-service
+    spec:
+      containers:
+      - name: ml-service
+        image: vanitya-ml:latest
+        imagePullPolicy: Never  # For local development
+        ports:
+        - containerPort: 8000
+        env:
+        - name: ENVIRONMENT
+          value: "development"
+        - name: DB_HOST
+          value: "postgres-service"
+        - name: DB_PORT
+          value: "5432"
+        - name: DB_USER
+          value: "postgres"
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: vanitya-secret
+              key: DB_PASS
+        - name: DB_NAME
+          value: "vanitya"
+        - name: DATABASE_URL
+          value: "postgresql://postgres:$(DB_PASSWORD)@postgres-service:5432/vanitya"
+        - name: REDIS_HOST
+          value: "redis-service"
+        - name: REDIS_PORT
+          value: "6379"
+        volumeMounts:
+        - name: storage
+          mountPath: /app/storage
+        - name: models
+          mountPath: /app/models
+      volumes:
+      - name: storage
+        emptyDir: {}
+      - name: models
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-service
+  namespace: vanitya
+spec:
+  selector:
+    app: ml-service
+  ports:
+  - port: 8000
+    targetPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-service-external
+  namespace: vanitya
+spec:
+  type: NodePort
+  selector:
+    app: ml-service
+  ports:
+  - port: 8000
+    targetPort: 8000
+    nodePort: 30800
