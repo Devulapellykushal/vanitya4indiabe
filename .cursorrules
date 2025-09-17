@@ -1,0 +1,291 @@
+# Cursor Rules for Vanitya Language Learning Platform
+
+## Project Context
+
+This is the Vanitya language learning platform focused on Indic languages. The project uses a multi-branch worktree architecture:
+
+- **Main Repository** (`F:\Vanitya\Vanitya`): Backend API (vanitya-be branch) - Node.js/Express
+- **Frontend Worktree** (`F:\Vanitya\worktrees\vanitya-fe`): React Native mobile app
+- **ML Worktree** (`F:\Vanitya\worktrees\vanitya-ml`): Python ML service
+
+## Architecture & Tech Stack
+
+### Backend (Current Directory)
+- Express.js with Clean Architecture
+- PostgreSQL + Sequelize ORM
+- Redis for caching and rate limiting
+- JWT authentication with social login
+- Multi-provider AI integration (Sarvam AI → AI4Bharat → Local fallback)
+
+### Frontend (vanitya-fe)
+- React Native 0.81.0 with TypeScript
+- React Navigation v7
+- Custom hooks for state management
+- Theme system with dark/light mode
+- Exercise system with hearts/lives mechanic
+
+### ML Service (vanitya-ml)
+- Python FastAPI with async/await
+- Multi-provider AI operations
+- Translation, transliteration, TTS, STT, exercise generation
+- Comprehensive fallback chains
+
+## Code Style & Standards
+
+### General
+- Use TypeScript/Python type hints everywhere
+- Follow Clean Architecture principles
+- Implement comprehensive error handling
+- Always use async/await for async operations
+- Add detailed JSDoc/docstring comments for complex functions
+
+### Backend (Node.js)
+- Use ES6+ features and modern JavaScript patterns
+- Follow Clean Architecture: api → application → infrastructure
+- Custom exceptions with structured error responses
+- Sequelize models with proper validations
+- Comprehensive logging with request IDs
+
+### Frontend (React Native)
+- Strict TypeScript configuration
+- Functional components with hooks
+- Custom hooks for complex state management
+- Responsive design with theme system
+- Proper error boundaries and loading states
+
+### ML Service (Python)
+- Black formatting with 88 character line length
+- Type hints for all function parameters and return values
+- Pydantic models for request/response validation
+- Async/await for all I/O operations
+- Comprehensive error handling with provider fallbacks
+
+## Language Learning Domain Rules
+
+### Exercise System
+- Always implement hearts/lives system (typically 5 hearts)
+- Support exercise types: multiple_choice, translation, transliteration, listening, speaking
+- Difficulty levels: beginner, intermediate, advanced
+- Progress tracking with XP, streaks, and achievements
+- Retry queue for failed questions
+
+### Indic Languages Support
+- Primary languages: Hindi (hi), Telugu (te), Tamil (ta), Kannada (kn), Malayalam (ml)
+- Secondary: Gujarati (gu), Bengali (bn), Marathi (mr), Punjabi (pa), Odia (or), Assamese (as), Urdu (ur)
+- Always use proper language codes (ISO 639-1)
+- Support script transliteration between Indic scripts
+
+### AI Provider Integration
+- Always implement fallback chains for AI operations
+- Primary: Sarvam AI, Secondary: AI4Bharat, Tertiary: Local/template
+- Log provider performance and fallback triggers
+- Implement confidence scoring for quality control
+- Cache expensive operations (translations, TTS)
+
+## Development Patterns
+
+### Error Handling
+- Use custom exception classes with error codes
+- Structured error responses with consistent format
+- Log errors with context and request IDs
+- Graceful degradation when AI providers fail
+
+### API Design
+- RESTful endpoints with consistent naming conventions
+- Comprehensive request/response validation
+- Health check endpoints for all services
+- Rate limiting on all external API calls
+- Proper HTTP status codes
+
+### State Management
+- Use custom React hooks for complex state
+- Implement proper loading and error states
+- Local storage for user preferences (theme, language)
+- Optimistic updates where appropriate
+
+### Database
+- Use Sequelize migrations for all schema changes
+- Proper model validations and relationships
+- Indexes on frequently queried fields
+- Soft deletes for user-generated content
+
+## Multi-Branch Coordination Rules
+
+### When Working Across Branches
+1. Define API contracts in backend first
+2. Keep data models consistent across services
+3. Use consistent error codes and messages
+4. Update documentation in all relevant branches
+
+### Cross-Service Communication
+- Backend exposes REST APIs for frontend and ML service
+- ML service provides specialized AI endpoints
+- Use structured response formats across all services
+- Implement proper service health checks
+
+## Security & Performance
+
+### Security
+- Never commit API keys or secrets
+- Use environment variables for all configuration
+- Implement proper input validation and sanitization
+- Rate limit all external API calls
+- Encrypt sensitive data in storage
+
+### Performance
+- Implement caching strategies for expensive operations
+- Use pagination for large datasets
+- Optimize images and audio assets
+- Monitor API response times and set timeouts
+- Use database indexes appropriately
+
+## Testing Guidelines
+
+### Backend Testing
+- Unit tests for all business logic
+- Integration tests for API endpoints
+- Mock external services in tests
+- Test error scenarios and edge cases
+- Maintain high test coverage
+
+### Frontend Testing
+- Component testing with React Native Testing Library
+- Hook testing for custom hooks
+- Mock API calls in tests
+- Test accessibility features
+- Test on both iOS and Android
+
+### ML Service Testing
+- Unit tests for all ML modules
+- Test provider fallback scenarios
+- Mock external AI APIs
+- Test with various input data
+- Validate response schemas
+
+## File Organization
+
+### Backend Structure
+```
+src/
+├── api/              # Express routes and middleware
+├── application/      # Business logic and use cases
+├── infrastructure/   # Database models and external services
+├── core/            # Configuration and shared utilities
+└── controllers/     # Request handlers
+```
+
+### Frontend Structure
+```
+src/
+├── components/      # Reusable UI components
+├── screens/         # App screens
+├── navigation/      # Navigation configuration
+├── hooks/          # Custom React hooks
+├── services/       # API and external services
+├── context/        # React contexts
+├── utils/          # Utility functions
+└── types/          # TypeScript definitions
+```
+
+### Common Patterns
+
+#### API Response Format
+```javascript
+// Success response
+{
+  success: true,
+  data: { ... },
+  message: "Operation successful"
+}
+
+// Error response
+{
+  success: false,
+  error: {
+    code: "ERROR_CODE",
+    message: "Human readable message",
+    details: { ... }
+  },
+  requestId: "uuid"
+}
+```
+
+#### Provider Fallback Pattern (ML Service)
+```python
+async def operation_with_fallback():
+    providers = get_providers()
+    for provider in providers:
+        try:
+            result = await provider.operation()
+            return result
+        except Exception as e:
+            logger.warning(f"{provider} failed: {e}")
+            continue
+    raise Exception("All providers failed")
+```
+
+#### React Hook Pattern
+```typescript
+const useCustomHook = () => {
+  const [data, setData] = useState<T | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const operation = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const result = await api.operation();
+      setData(result);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  return { data, loading, error, operation };
+};
+```
+
+## AI-Specific Guidelines
+
+### When implementing AI features:
+- Always provide fallback options when AI services fail
+- Implement confidence thresholds for quality control
+- Cache results to reduce API costs
+- Provide user feedback during processing
+- Handle rate limiting gracefully
+- Support multiple AI providers for redundancy
+
+### Exercise Generation Rules:
+- Generate valid exercises matching JSON schema
+- Include proper hints and explanations
+- Create plausible incorrect options for multiple choice
+- Ensure cultural appropriateness for target language
+- Validate generated content before returning
+
+## Development Commands Reference
+
+### Backend
+- `npm run dev` - Start development server
+- `npm run db:migrate` - Run database migrations
+- `npm run db:seed` - Seed database with sample data
+- `npm test` - Run test suite
+- `make up` - Start services with Docker
+
+### Frontend
+- `npm start` - Start Metro bundler
+- `npm run android` - Run on Android
+- `npm run ios` - Run on iOS
+- `npm test` - Run tests
+- `npm run lint` - Lint code
+
+### ML Service
+- `pip install -r requirements.txt` - Install dependencies
+- `uvicorn app:app --reload --port 8000` - Start development server
+- `pytest tests/ -v` - Run tests
+- `black src/ tests/` - Format code
+- `mypy src/` - Type checking
+
+Remember: This is a language learning platform focused on Indic languages with sophisticated AI integration and a multi-service architecture. Always consider the educational context and user experience when making development decisions.

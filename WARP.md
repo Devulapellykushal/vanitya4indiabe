@@ -2,6 +2,32 @@
 
 This file provides guidance to WARP (warp.dev) when working with code in this repository.
 
+## Multi-Branch Development Context
+
+**IMPORTANT**: This is the main repository (vanitya-be branch) of the Vanitya project, which uses Git worktrees for parallel development.
+
+### Project Structure
+- **Main Repository**: `F:\Vanitya\Vanitya` (vanitya-be branch - Backend API) ← **You are here**
+- **Frontend Worktree**: `F:\Vanitya\worktrees\vanitya-fe` (React Native app)
+- **ML Worktree**: `F:\Vanitya\worktrees\vanitya-ml` (Python ML service)
+
+### Multi-Agent Coordination
+This setup enables multiple WARP agents to work simultaneously:
+- **Backend Agent**: Works on API, database, and business logic ← **Your role**
+- **Frontend Agent**: Works on React Native UI and mobile features  
+- **ML Agent**: Works on language processing and AI integration
+
+### Coordination Guidelines
+As the Backend Agent, you coordinate with other services by:
+1. **Defining API Contracts**: Establish REST endpoints and data schemas
+2. **Managing Database Schema**: Migrations, models, and relationships
+3. **Orchestrating Services**: Backend calls ML service, Frontend calls Backend
+4. **Configuration Management**: Environment variables and service discovery
+5. **Error Handling**: Consistent error codes and messages across services
+
+### Branch-Specific Context
+You are currently working on the **Backend API (Node.js/Express)** codebase.
+
 ## Project Overview
 
 Vanitya is a language learning platform for Indic Languages built with:
