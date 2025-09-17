@@ -7,3 +7,19 @@ DEFAULT_SOURCE_LANG: "hi"
 DEFAULT_TARGET_LANG: "te"
 QUESTIONS_JSON_PATH: "data/sample_questions.json"
 STORAGE_BACKEND: "local" # or "s3"
+
+# AI configuration
+ai:
+  fallback_order: [sarvam, ai4bharat, local]
+  sarvam:
+    credits_threshold: ${SARVAM_CREDITS_THRESHOLD}
+
+# Storage configuration
+storage:
+  backend: ${STORAGE_BACKEND}
+
+# Generation policy configuration
+generation_policy:
+  max_exercises_per_lang_level: 1
+  questions_per_exercise: 10
+  audio_probability: 0.2

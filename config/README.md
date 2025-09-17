@@ -52,3 +52,44 @@ The backend supports hot-reloading configuration without restart:
 - Never commit `.env` file to version control
 - Add proper authentication to admin config endpoints before production
 - Use environment variables for all sensitive data
+
+## Backend configuration bootstrap (vanitya-be)
+
+### Where to put API keys
+Place secrets in your environment (preferred) or in a local .env file at the project root for development. A sample file is provided at config/env.sample; copy values from there into your .env or environment. Do not commit real secrets.
+
+- SARVAM_API_KEY goes in .env or CI secrets.
+- FIREBASE_API_KEY, FIREBASE_PROJECT_ID, GOOGLE_WEB_CLIENT_ID go in .env or CI secrets.
+- JWT_SECRET should be a strong, random string and must not be committed.
+
+### Sarvam credits threshold
+SARVAM_CREDITS_THRESHOLD defines the minimum remaining credits at which the system will stop using Sarvam and fall back to the next provider in ai.fallback_order.
+
+High-level behavior:
+1) Determine the current provider by consulting ai.fallback_order.
+2) If provider is sarvam and remaining credits are less than or equal to SARVAM_CREDITS_THRESHOLD, skip sarvam and try the next provider in the list.
+3) Continue through the list until a provider is usable. If none are available, use the local provider if present or return a graceful error.
+
+The threshold value is provided via the environment and referenced in config as ai.sarvam.credits_threshold: ${SARVAM_CREDITS_THRESHOLD}. The default sample value is 50.
+
+### AI fallback order
+Configured via ai.fallback_order in config/vanitya-config.yml. The default order is:
+- sarvam
+- ai4bharat
+- local
+
+You can reorder to prioritize different providers.
+
+### Storage backend toggle
+Set STORAGE_BACKEND to local or s3 in your environment or .env. The config reads this value and selects the appropriate storage backend. When using s3, ensure the usual AWS credentials and bucket configuration are available in the environment.
+
+### Generation policy
+Tunable content generation options located under generation_policy in config/vanitya-config.yml:
+- max_exercises_per_lang_level: 1
+- questions_per_exercise: 10
+- audio_probability: 0.2
+
+These defaults can be adjusted to tailor content density and audio usage.
+
+### Windows/WSL notes
+All paths in this configuration are relative where applicable. Avoid hardcoding OS-specific absolute paths. The provided defaults work for Windows, WSL, and Linux environments when using environment variables and relative paths.
