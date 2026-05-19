@@ -1,0 +1,22 @@
+# Bun configuration for Vanitya project
+
+[install]
+# Use production dependencies by default
+production = false
+
+# Auto-install peer dependencies
+peer = true
+
+# Lockfile settings
+lockfile = "bun.lockb"
+
+# Cache settings
+cache = true
+
+[test]
+# Test timeout
+timeout = 30000
+
+# Preload test setup
+preload = ["./test/setup.ts"]
+

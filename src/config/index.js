@@ -34,9 +34,9 @@ class Config {
       DATABASE_URL: process.env.DATABASE_URL,
       DB_HOST: process.env.DB_HOST || 'localhost',
       DB_PORT: parseInt(process.env.DB_PORT) || 5432,
-      DB_NAME: process.env.DB_NAME || 'vanitya_dev',
+      DB_NAME: process.env.DB_NAME || 'vanitya',
       DB_USER: process.env.DB_USER || 'postgres',
-      DB_PASSWORD: process.env.DB_PASSWORD || 'password',
+      DB_PASSWORD: process.env.DB_PASSWORD || 'postgres',
 
       // Redis config
       REDIS_URL: process.env.REDIS_URL || 'redis://localhost:6379',
