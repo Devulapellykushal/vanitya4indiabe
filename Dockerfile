@@ -11,8 +11,7 @@ RUN apk add --no-cache python3 make g++ git
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production && \
-    npm install -g nodemon
+RUN npm install
 
 # Copy application source
 COPY . .
@@ -27,5 +26,5 @@ EXPOSE 5000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD node -e "require('http').get('http://localhost:5000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1); });"
 
-# Development command with nodemon for hot-reload
-CMD ["nodemon", "--watch", "src", "--watch", "config", "--ext", "js,json,ts", "--exec", "node", "src/index.js"]
+# Start the NestJS application in development mode
+CMD ["npx", "nest", "start", "--watch"]
